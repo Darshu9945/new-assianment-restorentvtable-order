@@ -38,11 +38,11 @@ axios.get("https://crudcrud.com/api/be455f247fc94db3bdb524c4f9863c1a/orderdetail
         li.id=user._id
         var deletedata=document.createElement('button')
         deletedata.textContent='delete'
-        deletedata.id=user.table
+        deletedata.id=user.dish
         li.textContent=user.dish+'-'+ user.amount+'-'+user.table
         table1.appendChild(li)
         li.appendChild(deletedata)
-        const removedata=document.getElementById(user.table)
+        const removedata=document.getElementById(user.dish)
         removedata.addEventListener('click',function(){
             removelist(user);
         },false)
@@ -64,11 +64,11 @@ axios.get("https://crudcrud.com/api/be455f247fc94db3bdb524c4f9863c1a/orderdetail
     li.id=user._id
     var deletedata=document.createElement('button')
     deletedata.textContent='delete'
-    deletedata.id=user.table
+    deletedata.id=user.dish
     li.textContent=user.dish+'-'+ user.amount+'-'+user.table
     table2.appendChild(li)
     li.appendChild(deletedata)
-    const removedata=document.getElementById(user.table)
+    const removedata=document.getElementById(user.dish)
     removedata.addEventListener('click',function(){
         removelist(user);
     },false)
@@ -90,11 +90,11 @@ var li=document.createElement('li')
 li.id=user._id
 var deletedata=document.createElement('button')
 deletedata.textContent='delete'
-deletedata.id=user.table
+deletedata.id=user.dish
 li.textContent=user.dish+'-'+ user.amount+'-'+user.table
 table3.appendChild(li)
 li.appendChild(deletedata)
-const removedata=document.getElementById(user.table)
+const removedata=document.getElementById(user.dish)
 removedata.addEventListener('click',function(){
     removelist(user);
 },false)
