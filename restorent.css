@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    border-bottom: 2px solid rgb(161, 155, 155);
+    
+  }
+  
+  .topnav a  {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  margin: 15px;
+  
+  }
+  .topnav p {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:solid;
+    font-weight: bold;
+    font-size: 27px;
+  margin: 15px;
+  }
+  
+  .topnav a:hover {
+    
+    color: blue;
+    
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .home1{
+   height: 100%;
+    position: relative;
+  }
+  .home1::before{
+    content: "";
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.s2ZLXwMZ3JjRPraZJfIxRQHaEK&pid=Api&P=0);
+    filter: brightness(40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Home{
+    width:100% ;
+    height: 600px;
+  }
+  .center{
+    margin: auto;
+    width: 50%;
+
+    padding: 10px;
+  }
+  .center .a{
+    text-align: center;
+    font-style:oblique;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .center .b{
+    text-align: center;
+    font-style: italic;
+    color: orangered;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .center .c{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #ddd;
+    
+    font-weight: bold;
+  }
+ .center    a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  margin: 15px;
+  }
+  .center    .d{
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .center    .e{
+    text-align: center;
+  
+  }
+  .f{
+    color: white;
+    background-color: orangered;
+    border-radius: 100%;
+    width: -5px;
+    
+  }
+  .e a{
+    font-size: larger;
+  }
+  .f:hover{
+    background-color: aliceblue;
+    color: orangered;
+  }
+  /* Create four equal columns that floats next to each other */
+
+/* About */
+.mainabout{
+  margin-top: 70px;
+  margin-bottom: 510px;
+}
+  
+  .video{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+   
+    
+  }
+  .video video{
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    margin-left: 20px;
+    
+  }
+  #vid1{
+    border: 2px solid orangered;
+    width: 450px;
+    height: 340px;
+    margin-left: 30px;
+  } 
+  #play{
+    display: none;
+  }
+.video .p1{
+  font-weight: bold;
+  font-style: italic;
+  color: orangered;
+  font-size: 17px;
+  margin-left: 30px;
+}
+.video .p2{
+  font-weight: bold;
+  margin-left: 30px;
+ 
+}
+.video .p3{
+  
+  margin-left: 30px;
+ margin-right: 150px;
+ margin-bottom: 70px;
+}
+.About{
+  background-color: rgb(230, 235, 240);
+  background-image: url('/images.jpg');
+  
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video a{
+  text-align: center;
+  text-decoration: none;
+  background-color: orangered;
+  font-size: 25px;
+ margin-left: 200px;
+ border-radius: 10%;
+padding: 14px 16px;
+}
+
+
+/* details */
+.detail{
+
+  height: 100%;
+   position: relative;
+  
+   
+   
+}
+.detail::before{
+  content: "";
+    background-image: url(https://cefrax.websitelayout.net/img/portfolio/1.jpg);
+    background-color: black;
+    filter: brightness(30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin-top: 50px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  margin-left: 20px; 
+  
+}
+.imgcenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  border: 2px solid orangered;
+  border-radius: 50%;
+}
+.imgcenter:hover{
+  background-color: orangered;
+}
+.column h2 {
+  text-align: center;
+  color: white;
+}
+.column  p {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-top: -10px;
+  color: white;
+}
+.column hr{
+  margin: auto;
+  width: 50px;
+  height: 2px;
+  background-color: orangered;
+  border: none;
+  margin-top: 20px;
+}
+
+
+
+/* Gallery */
+#maingallery{
+  background-color: aliceblue;
+  
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin-top: 20px;
+  position: relative;
+}
+.column1 img{
+  width: 340px;
+}
+.text1{
+    position: absolute;
+    top: 20px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 80%;
+  height: 80%;
+margin-top: 10px;
+  text-align: center;
+  background-color:rgba(0, 0, 0, .6);
+  opacity: 0;
+}
+.tocenter{
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row1{
+  margin-left: 20px; 
+}
+
+.imgcenter1{
+  max-width: 100%;
+  max-height: 100%;
+}
+.row1 h1{
+  text-align: center;
+  font-size: 30px;
+
+}
+.row1 p{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 50px;
+  color: white;
+  font-weight: bold;
+  
+
+}
+
+

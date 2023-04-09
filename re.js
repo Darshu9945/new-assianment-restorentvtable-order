@@ -43,8 +43,8 @@ function adddatatoserver(e){
      
         async function postdata(){
             try{
-                let post1= await axios.post("https://crudcrud.com/api/b5aa3dc8984f4c6fb8aa56a0a1fc2555/orderdetails",obj)
-                shownewuseronscreen(post1.data)
+                let post1= await axios.post("https://crudcrud.com/api/79a2ed6933b342bf8b4d17d69e22366d/orderdetails",obj)
+                console.log(post1)
             }
          catch(e){
             console.log(e)
@@ -52,12 +52,13 @@ function adddatatoserver(e){
      
     
 }
+location.reload()
 postdata()
 }
 window.addEventListener('DOMContentLoaded',()=>{
     async function getdata(){
         try{
-            let response=await  axios.get("https://crudcrud.com/api/b5aa3dc8984f4c6fb8aa56a0a1fc2555/orderdetails")
+            let response=await  axios.get("https://crudcrud.com/api/79a2ed6933b342bf8b4d17d69e22366d/orderdetails")
             for (let i=0; i<response.data.length; i++){
                 shownewuseronscreen(response.data[i])
             }
@@ -68,7 +69,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     }
     getdata()
 
-})
+
 
     function shownewuseronscreen(user){
         document.getElementById('amount').value=23
@@ -98,7 +99,7 @@ window.addEventListener('DOMContentLoaded',()=>{
             
                 async function deletedata(user){
                     try{
-                        let response = await axios.delete(`https://crudcrud.com/api/b5aa3dc8984f4c6fb8aa56a0a1fc2555/orderdetails/${user._id}`)
+                        let response = await axios.delete(`https://crudcrud.com/api/79a2ed6933b342bf8b4d17d69e22366d/orderdetails/${user._id}`)
                         var li =document.getElementById(user._id)
                         table1.removeChild(li)
                     } catch(e){
@@ -131,7 +132,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         
             async function deletedata1(user){
                 try{
-                    let response=await axios.delete(`https://crudcrud.com/api/b5aa3dc8984f4c6fb8aa56a0a1fc2555/orderdetails/${user._id}`)
+                    let response=await axios.delete(`https://crudcrud.com/api/79a2ed6933b342bf8b4d17d69e22366d/orderdetails/${user._id}`)
                     var li =document.getElementById(user._id)
                     table2.removeChild(li)
                 } catch(e){
@@ -168,7 +169,7 @@ function removelist(user){
     
         async function deletedata2(user){
             try{
-                let response=await axios.delete(`https://crudcrud.com/api/b5aa3dc8984f4c6fb8aa56a0a1fc2555/orderdetails/${user._id}`)
+                let response=await axios.delete(`https://crudcrud.com/api/79a2ed6933b342bf8b4d17d69e22366d/orderdetails/${user._id}`)
                 let li1 =document.getElementById(user._id)
                 table3.removeChild(li1)
             } catch(e){
@@ -181,7 +182,7 @@ function removelist(user){
 }
       }
 
-
+})
    
 
     
